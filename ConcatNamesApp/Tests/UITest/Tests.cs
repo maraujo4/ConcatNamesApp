@@ -34,6 +34,7 @@ namespace UITest
 			Assert.IsTrue(results.Any());
 		}
 
+        [Test]
         public void LastNameTextIsDisplayed()
         {
             AppResult[] results = app.WaitForElement(c => c.Marked("Last name"));
@@ -42,6 +43,7 @@ namespace UITest
             Assert.IsTrue(results.Any());
         }
 
+        [Test]
         public void ButtonConcatIsDisplayed()
         {
             AppResult[] results = app.WaitForElement(c => c.Marked("Concat"));
@@ -50,6 +52,7 @@ namespace UITest
             Assert.IsTrue(results.Any());
         }
 
+        [Test]
         public void ConcatButtonWorks()
         {
             app.EnterText("EntryFirstName", "It");
