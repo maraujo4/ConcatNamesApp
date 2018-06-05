@@ -6,9 +6,12 @@
 
     <StackLayout>
         <!-- Place new controls here -->
-    	<Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+    	<Label Text="First name"/>
+        <Entry x:Name ="EntryFirstName" AutomationId="EntryFirstName"/>
+        <Label Text="Last name" />
+        <Entry x:Name ="EntryLastName" AutomationId="EntryLastName"/>
+        <Button x:Name ="ButtonConcat" Text="Concat" AutomationId="ButtonConcat"/>
+        <Label x:Name ="LabelResult" Text="" AutomationId="LabelResult" />
     </StackLayout>
 
 </ContentPage>
