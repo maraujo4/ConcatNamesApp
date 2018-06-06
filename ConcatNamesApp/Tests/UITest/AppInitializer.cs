@@ -10,7 +10,9 @@ namespace UITest
 		{
 			if (platform == Platform.Android)
 			{
-                ConfigureApp.Android.ApkFile(@"C:\apks\com.companyname.ConcatNamesApp.apk").StartApp();
+                string apkFilePath = @"C:\github\Source\Repos\ConcatNamesApp\ConcatNamesApp\ConcatNamesApp.Android\bin\Release\com.companyname.ConcatNamesApp - Signed.apk";
+                //string apkFilePath = @"C:\apks\com.companyname.ConcatNamesApp.apk";
+                ConfigureApp.Android.ApkFile(apkFilePath).StartApp();
                 return ConfigureApp.Android.StartApp();                
             }
 
