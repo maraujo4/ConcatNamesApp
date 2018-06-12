@@ -34,7 +34,9 @@
     <PackageReference Include="Microsoft.AppCenter.Crashes">
       <Version>1.6.1</Version>
     </PackageReference>
-    <PackageReference Include="NUnit" Version="2.6.4" />
+    <PackageReference Include="NUnit">
+      <Version>2.6.4</Version>
+    </PackageReference>
     <PackageReference Include="Xamarin.UITest" Version="2.2.4" />
     <PackageReference Include="NUnitTestAdapter" Version="2.1.1" />
   </ItemGroup>
@@ -45,4 +47,7 @@
     <Compile Include="AppInitializer.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>del /f "$(TargetDir)System.Net.Http.dll"</PostBuildEvent>
+  </PropertyGroup>
 </Project>
