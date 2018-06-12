@@ -56,7 +56,7 @@ namespace UITest
         public void ConcatButtonWorks()
         {
             app.EnterText("EntryFirstName", "It");
-            app.EnterText("EnterLastName", "Works");
+            app.EnterText("EntryLastName", "Works");
             app.Tap("ButtonConcat");
             var result = app.Query("LabelResult").FirstOrDefault(oo => oo.Text == "It Works!");
             Assert.IsTrue(result != null);
