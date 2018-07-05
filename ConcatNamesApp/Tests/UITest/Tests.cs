@@ -1,7 +1,5 @@
-﻿using System;
-using System.IO;
+﻿using NUnit.Framework;
 using System.Linq;
-using NUnit.Framework;
 using Xamarin.UITest;
 using Xamarin.UITest.Queries;
 
